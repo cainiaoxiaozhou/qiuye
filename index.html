@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋野美照一览</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            column-count: 3;
+            column-gap: 0;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            break-inside: avoid;
+            height: auto;
+            break-inside: avoid;
+            margin-bottom: -4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <audio id="background-music"
+            src="https://webfs.hw.kugou.com/202308120957/9783d492af27b385e3e0f98a55ba1d78/KGTX/CLTX001/23a385cc332d3071a276484754884db0.mp3"></audio>
+        <button style="width: 100%;" onclick="playBackgroundMusic()">点击播放背景音乐</button>
+        <img src="./images//1.jpg" alt="">
+        <img src="./images//2.jpg" alt="">
+        <img src="./images//3.jpg" alt="">
+        <img src="./images//4.jpg" alt="">
+        <img src="./images//5.jpg" alt="">
+        <img src="./images//6.jpg" alt="">
+        <img src="./images//7.jpg" alt="">
+        <img src="./images//8.jpg" alt="">
+        <img src="./images//2.jpg" alt="">
+        <img src="./images//2.jpg" alt="">
+        <img src="./images//9.jpg" alt="">
+        <img src="./images//10.jpg" alt="">
+        <img src="./images//11.jpg" alt="">
+        <img src="./images//12.jpg" alt="">
+        <img src="./images//13.jpg" alt="">
+        <img src="./images//13.jpg" alt="">
+        <img src="./images//13.jpg" alt="">
+        <img src="./images//1.jpg" alt="">
+        <img src="./images//14.jpg" alt="">
+        <img src="./images//3.jpg" alt="">
+
+        <!-- <button onclick="pauseBackgroundMusic()">暂停背景音乐</button> -->
+        <!-- <source src="https://webfs.hw.kugou.com/202308120957/9783d492af27b385e3e0f98a55ba1d78/KGTX/CLTX001/23a385cc332d3071a276484754884db0.mp3" type="audio/mpeg"> -->
+    </div>
+</body>
+<script>
+    var audio = document.getElementById('background-music');
+
+    function playBackgroundMusic() {
+        audio.play();
+    }
+
+    function pauseBackgroundMusic() {
+        audio.pause();
+    }
+</script>
+
+</html>
